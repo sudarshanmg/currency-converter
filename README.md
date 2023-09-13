@@ -4,7 +4,7 @@
 
 ## Run on your system
 
-1. `1. git clone https://github.com/sudarshanmg/currency-converter.git`
+1. `git clone https://github.com/sudarshanmg/currency-converter.git`
 2. `npm install`
 3. You will need tailwind
 4. To install tailwind
