@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+
+    <link rel="stylesheet" href="./dist/output.css" />
+    <script defer src="./renderer.js"></script>
+    <title>Exchange Rate</title>
+  </head>
+  <body class="bg-black text-white font-sans">
+    <div class="flex flex-col h-screen items-center justify-center">
+      <h1 class="text-4xl w-full text-center my-4">
+        Currency Exchange Calculator
+      </h1>
+      <form class="flex flex-col items-center m-8">
+        <div>
+          <label for="c1" class="text-2xl"> Enter the rate: </label>
+
+          <div class="w-full text-center flex flex-row">
+            <input
+              type="number"
+              name="c1"
+              id="c1"
+              class="h-8 my-4 w-[50vw] text-black px-2 outline-none border-none rounded-lg"
+            />
+            <select
+              name="c1opt"
+              id="c1opt"
+              class="text-white bg-black border-none outline-none"
+            >
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="INR">INR</option>
+              <option value="AED">AED</option>
+              <option value="AUD">AUD</option>
+            </select>
+          </div>
+        </div>
+
+        <button
+          class="p-4 bg-transparent text-4xl text-white font-bold font-sans rounded-2xl"
+          id="replaceBtn"
+        >
+          ↕️
+        </button>
+        <div>
+          <label for="c2" class="text-2xl"> Result: </label>
+
+          <div class="w-full text-center flex flex-row">
+            <input
+              type="number"
+              name="c2"
+              id="c2"
+              class="h-8 my-4 w-[50vw] text-black px-2 outline-none border-none rounded-lg"
+            />
+            <select name="c2opt" id="c2opt" class="text-white bg-black">
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="INR">INR</option>
+              <option value="AED">AED</option>
+              <option value="AUD">AUD</option>
+            </select>
+          </div>
+        </div>
+
+        <button
+          class="p-4 bg-blue-400 text-white font-bold font-sans rounded-2xl hover:p-5 transition-all delay-300"
+          id="submitBtn"
+        >
+          Calculate
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "currency_converter",
+  "version": "1.0.0",
+  "description": "convert currency in electron",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "sudarshan",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^26.2.1",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "electron-reload": "^2.0.0-alpha.1"
+  }
+}
